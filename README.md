@@ -12,7 +12,7 @@ $ meteor add landing-pages:startbootstrap-agency
 
 ### Configuration ###
 
-```coffescript
+```coffeescript
 
 ###
 To configure the template, create a LandingPage object. You can alter any of the following fields or omit as necessary:
