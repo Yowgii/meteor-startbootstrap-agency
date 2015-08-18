@@ -2,7 +2,7 @@
 
 ### Description ###
 
-This package wraps allows you to use startbootstrap agency te!plate just by installing it. It is fully configurable so you can change images, links, colors etc and make it your own without having to worry about JavaScript CSS imports. Just change the configuration file and you're good to go... :)
+This package wraps allows you to use startbootstrap agency template just by installing it. It is fully configurable so you can change images, links, colors etc and make it your own without having to worry about JavaScript CSS imports. Just change the configuration file and you're good to go... :)
 
 
 ### Installation ###
@@ -137,3 +137,12 @@ To configure the template, create a LandingPage object. You can alter any of the
       url: '#'
 
 ```
+
+The template is divided into different sections: services, portfolio, about, team, client, contact. You can customize the various sections interms of text, and display. 
+
+To prevent a section from not showing, just don't add it to the object. 
+
+All sections have their corresponding navbar items. to prevent a section from being added to the navbar, don't add it to the section. Eg:
+
+
+
