@@ -33,7 +33,6 @@ To configure the template, create a LandingPage object. You can alter any of the
     # services section
     #
     services:
-      visible: true
       navName: 'services'
       heading: 'Services'
       subHeading: 'Lorem ipsum dolor sit amet consectetur.'
@@ -48,7 +47,6 @@ To configure the template, create a LandingPage object. You can alter any of the
     #
     portfolio:
       navName: 'portfolio'
-      visible: true
       heading: 'Portfolio'
       subHeading: 'Lorem ipsum dolor sit amet consectetur.'
       works: [
@@ -65,7 +63,6 @@ To configure the template, create a LandingPage object. You can alter any of the
     #
     #
     about:
-      visible: true
       navName: 'about'
       heading: 'About Us'
       subHeading: 'Lorem ipsum dolor sit amet consectetur.'
@@ -84,7 +81,6 @@ To configure the template, create a LandingPage object. You can alter any of the
     #
     #
     team:
-      visible: true
       navName: 'team'
       heading: 'The Team'
       subHeading: 'Lorem ipsum dolor sit amet consectetur.'
@@ -98,8 +94,7 @@ To configure the template, create a LandingPage object. You can alter any of the
     #
     # clients section
     #
-    clients: 
-      visible: true
+    clients:
       list: [
         {imgUrl: 'img/logos/envato.jpg'}
         {imgUrl: 'img/logos/designmodo.jpg'}
@@ -122,7 +117,6 @@ To configure the template, create a LandingPage object. You can alter any of the
     # footer
     #
   footer:
-    visible: true
     social:
       facebook: '#'
       twitter: '#'
@@ -142,7 +136,24 @@ The template is divided into different sections: services, portfolio, about, tea
 
 To prevent a section from not showing, just don't add it to the object. 
 
-All sections have their corresponding navbar items. to prevent a section from being added to the navbar, don't add it to the section. Eg:
+All sections have their corresponding navbar items. to prevent a section from being added to the navbar, don't add it to the section.
 
+**Example 1**
 
-
+```coffeescript
+###
+This configuration creates the header with the custom text and image with the footer having my facebook and twitter link
+###
+@LandingPage =
+  backgroundImage: '/img/background.png'
+  appName: 'My App'
+  intro:
+    leadIn: 'Ever thought about getting your own server?'
+    button:
+      buttonText: 'Get Started'
+      buttonUrl: '/sign-in'
+  footer:
+    social:
+      facebook: 'https://www.facebook.com/samuel.amoah.509'
+      twitter: 'https://www.twitter/snamoah'
+```
